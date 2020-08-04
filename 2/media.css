@@ -1,0 +1,19 @@
+@media all and (min-width:1024px){
+  .center{
+    width:65%;
+    position:relative;
+    left:17.5%;
+  }
+
+  .btn_pages{
+    left:8%;
+  }
+
+}
+
+@media all and (max-width:705px){
+  .center::before{
+    height:1.7rem;
+    top:-20%;
+  }
+}

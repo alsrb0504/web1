@@ -1,0 +1,259 @@
+/* // body 에는 이미지 그대로
+// body 아래 main 위에 어두운 이미지 서로 겹치게
+// main 은 z-index가 높게.
+// 새로운 거에 검은 이미지와 트렌지션을 준다. */
+body{
+  background-image: url(./dimension/images/bg.jpg);
+  /* background-position: center;
+
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 100%;
+  width:100%; */
+  /* background-attachment: fixed; */
+
+
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin:0;
+
+
+}
+
+.black{
+  position:absolute;
+  z-index:1;
+  top:0;
+  left:0;
+  height:100%;
+  width:100vw;
+  background-color:rgba(0,0,0);
+
+  opacity:0.5;
+  transition: opacity 5s ease;
+}
+
+/* main */
+main{
+  position:relative;
+  z-index:1;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:white;
+}
+
+
+/* head */
+.head{
+  font-size:1.5rem;
+  border:1.2px solid white;
+  border-radius :50%;
+  padding:16px 22px;
+  margin-bottom: 1.9rem;
+
+}
+
+/* center */
+.inner{
+  position:relative;
+
+}
+
+.center::before{
+  content: '';
+  position:absolute;
+  top:-23%;
+  left:50%;
+  width:1.5px;
+  height:2rem;
+  background: white;
+
+}
+
+.center{
+  width:85vw;
+  display:flex;
+  flex-direction: column;
+
+  /* position:relative; */
+  border-top:1.2px solid white;
+}
+
+.center .title{
+  opacity:1;
+  padding-top: 2.2rem;
+  padding-bottom: 1.2rem;
+  /* border-top:1.2px solid white; */
+
+  font-size:1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+
+}
+
+.center .sub_title{
+  padding: 0 1.2rem;
+  padding-bottom: 2.2rem;
+  border-bottom:1.2px solid white;
+
+  font-size:0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.center .sub_title a{
+  color:white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+
+/* buttons */
+.buttons::before{
+    content: "";
+    position:absolute;
+    left:50%;
+    top:75;
+    width:1.7px;
+    height:1.7rem;
+    background: white;
+}
+
+.buttons ul{
+  padding: 0;
+  margin:0;
+  margin-top:1.6rem;
+  list-style: none;
+  border-bottom:1.2px solid white;
+  margin-bottom:2rem;
+  /* border-radius: 4px; */
+
+
+  display:flex;
+  /* justify-content: center; */
+}
+
+.buttons ul li{
+  width:5rem;
+  padding-top:0;
+  margin-top:0;
+
+  border-left:1.2px solid white;
+  border-top:1.2px solid white;
+}
+
+.buttons ul li:nth-child(4){
+  border-right:1.2px solid white;
+}
+
+.buttons button{
+  margin:0;
+  padding:0.5rem 1.5rem;
+  border:none;
+  font-size:0.5rem;
+
+  width:100%;
+  outline:none;
+  color:white;
+  background-color:transparent;
+  text-align:center;
+}
+
+
+/* footer */
+.footer{
+  font-size:0.35rem;
+  letter-spacing: 0.1rem;
+}
+
+.footer a{
+  color:white;
+  text-decoration:none;
+  border-bottom:0.8px dotted white;
+}
+
+/* hover */
+.footer a:hover,
+.center .sub_title a:hover{
+  border-bottom:none;
+  transition: all 0.5s;
+  /* 왜 적용이 안될까? */
+}
+
+.buttons ul li:hover{
+  background-color:rgba(255, 255, 255, 0.2);
+  transition: background 0.2s;
+}
+
+
+/* btn_pages */
+.btn_pages{
+  position:absolute;
+  z-index:2;
+
+  top:10vh;
+  left:6%;
+  width:80%;
+  /* height:80%; */
+  margin-bottom:2rem;
+  background-color: rgba(20,20,20,0.9);
+  border-radius: 5px;
+
+  padding:1rem 1rem;
+  color:white;
+}
+
+.btn_pages article{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.btn_pages article h2{
+
+  margin-top:0.8rem;
+  padding-bottom:0.5rem;
+  font-size:0.9rem;
+
+  /* border-bottom:2px solid white; */
+  text-decoration: underline;
+  text-underline-position:under;
+
+  letter-spacing: 0.3rem;
+}
+
+.btn_pages img{
+  border-radius: 5px;
+  margin:1.3rem 0;
+  width:100%;
+}
+
+.btn_pages p {
+  font-size:0.7rem;
+}
+
+.btn_pages .x{
+  display:block;
+  width:100%;
+  text-align:right;
+  font-size:1.2rem;
+  color:white;
+  background-color:transparent;
+  border:none;
+  outline:none;
+}
+
+/* js */
+.unshow{
+  display:none;
+  transition: all 3s;
+}
