@@ -1,0 +1,38 @@
+:root {
+  /* color */
+  --icon-color: #e57373;
+  --btn-back-color:  #ffebee;
+}
+
+
+
+aside .menu .menu__list li a i:hover,
+aside .menu .menu__list li a:hover,
+header .header__title span:hover,
+header .icons i:hover{
+  color: var(--icon-color);
+
+  transition: all 100ms ease;
+}
+
+.btn:hover{
+  background-color : var(--btn-back-color);
+  transition: all 100ms ease;
+}
+
+.grid__box .boxs .box img:hover{
+  transform: scale(1.05);
+  transition: transform 200ms ease-in-out;
+}
+
+aside .picture__menu .picture__box li img:hover{
+  transform: scale(1.1);
+  transition: transform 300ms linear;
+}
+
+aside .info__menu .info__sub__text a:hover,
+aside .last__text a:hover{
+  color: var(--icon-color);
+  border-color: var(--icon-color);
+  transition: all 100ms ease;
+}

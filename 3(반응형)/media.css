@@ -1,0 +1,23 @@
+@media all and (min-width:1280px){
+  .fas{
+    /* display:none; */
+  }
+
+  aside{
+    width:300px;
+  }
+  body{
+    position:relative;
+  }
+  .screen{
+    width:calc(90vw - 300px);
+    position:absolute;
+    top:0;
+    right:0;
+  }
+
+  .grid__box .boxs .grid__right::before{
+    left:-5%;
+  }
+
+}
