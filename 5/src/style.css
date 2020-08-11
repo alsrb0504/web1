@@ -1,0 +1,614 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* share */
+.white_block{
+	background-color:white;
+	border:none;
+
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+}
+
+.btn{
+	background-color:transparent;
+	color:white;
+	border:none;
+	outline:none;
+	border:2px solid white;
+}
+
+.title_share{
+	border-bottom: 2px solid white;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+	border-bottom:0.5px dotted white;
+}
+/* main */
+main{
+	background: url(./images/01.jpg) rgb(00,36,66);
+	background-position:center;
+	background-size:cover;
+	background-blend-mode:multiply;
+
+	position:relative;
+  height:23.3rem;
+}
+
+@keyframes main_opacity {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity:0;
+		z-index: -1;
+	}
+}
+
+main::before{
+	content: "";
+	background-color:rgb(30, 30, 90);
+	width:100%;
+	height:100%;
+	position:absolute;
+	/* z-index: 1; */
+	top:0;
+
+	animation: main_opacity;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+
+/* main header */
+main header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding:0.7rem 0.8rem;
+
+	font-weight: bold;
+	font-size: 0.5rem;
+	letter-spacing: 0.1rem;
+	color:white;
+}
+
+main header .header_left{
+	display:flex;
+	align-items: center;
+}
+
+main header .header_left button{
+	font-size:0.5rem;
+	margin-right:0.4rem;
+	padding:0.2rem 0.2rem;
+}
+
+
+/* main head_line */
+main .head_line{
+	color:white;
+	margin: 0 2rem;
+	margin-top:6.3rem;
+}
+
+main .head_line .head_title{
+	font-size:2rem;
+	font-weight: bold;
+	padding-bottom:1.5rem;
+	border-bottom:2px solid white;
+}
+
+main .head_line .head_sub{
+	margin-top:1.8rem;
+	display:flex;
+	align-items: center;
+	font-size:0.4rem;
+	font-weight: bold;
+	letter-spacing: 0.13rem;
+}
+
+main .head_line .head_sub .ad{
+	min-width: 420px;
+	max-width: 420px;
+	line-height: 0.8rem;
+}
+
+main .head_line .head_sub .head_btn{
+	min-width: 8rem;
+	font-size:0.5rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+
+	padding:0.5rem 0;
+}
+
+
+/* contents */
+.contents ul{
+	display:grid;
+	grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+	cursor:pointer;
+}
+
+.contents ul li{
+	width:100%;
+	height: 13.5rem;
+
+	background-position:center;
+	background-size:cover;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	color:white;
+	position:relative;
+	transition: all 900ms;
+
+}
+
+.contents ul li:hover{
+	background-color:transparent;
+	transition: all 900ms;
+}
+
+.contents ul li .item_title{
+	width:50%;
+	margin-left: 1.4rem;
+	padding-bottom:1rem;
+
+	font-weight: bold;
+}
+
+.contents ul li .item_sub{
+	margin-left:1.4rem;
+	padding-top:0.7rem;
+
+	font-weight: bold;
+	font-size:0.4rem;
+	letter-spacing: 0.1rem;
+}
+
+.contents ul li::before{
+	content:"";
+	background-position: center;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:-1;
+	top:0;
+}
+
+.contents ul .pic01{
+	background-color:rgba(150, 230, 250, 0.9);
+}
+.contents ul .pic01::before{
+		background-image: url(./images/02.jpg);
+}
+
+.contents ul .pic02{
+	background-color:rgba(150, 150, 250, 0.9);
+}
+.contents ul .pic02::before{
+		background-image: url(./images/03.jpg);
+}
+
+.contents ul .pic03{
+	background-color:rgba(240, 120, 120, 0.9);
+}
+.contents ul .pic03::before{
+		background-image: url(./images/04.jpg);
+}
+
+.contents ul .pic04{
+	background-color:rgba(255, 220, 160, 0.9);
+}
+.contents ul .pic04::before{
+		background-image: url(./images/05.jpg);
+}
+
+.contents ul .pic05{
+	background-color:rgba(159, 168, 218, 0.9);
+}
+.contents ul .pic05::before{
+		background-image: url(./images/06.jpg);
+}
+
+.contents ul .pic06{
+	background-color:rgba(165, 214, 167, 0.9);
+}
+.contents ul .pic06::before{
+		background-image: url(./images/07.jpg);
+}
+
+/* ad */
+.ad_part{
+	background-color: #0a3d62;
+	padding:3rem 2rem;
+
+	color:white;
+}
+
+.ad_part .ad_part_title{
+	width:7rem;
+	display:inline-block;
+	padding-bottom:1rem;
+	margin-bottom:1.3rem;
+	font-weight: bold;
+}
+
+.ad_part .ad_part_text{
+	font-size:0.6rem;
+	line-height: 1rem;
+	margin-bottom:1rem;
+}
+
+.ad_part .ad_part_btn{
+	letter-spacing: 0.1rem;
+	padding:0.5rem 1rem;
+}
+
+/* footer */
+footer{
+	background-color:rgb(00,36,66);
+	display:flex;
+	flex-direction: column;
+	color:white;
+}
+
+/* footer send_email */
+footer .send_email{
+	padding:3rem 2rem;
+	border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+
+	font-size:0.5rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+}
+
+footer .send_email .name_email{
+	display:flex;
+	justify-content: space-between;
+	/* justify-content: space-around; */
+}
+
+footer .send_email .name_email .email,
+footer .send_email .name_email .name{
+	flex-basis:48%;
+	display:flex;
+	flex-direction: column;
+}
+
+footer .send_email .name_email input{
+	background-color: #0a3d62;
+	border:none;
+	margin-top:0.5rem;
+	padding:0.5rem;
+	font-size:0.6rem;
+	color:white;
+	outline-color:powderblue;
+}
+
+footer .send_email .message{
+	margin:1rem 0;
+	display:flex;
+	flex-direction: column;
+}
+
+footer .send_email .message textarea{
+	margin-top:0.5rem;
+	background-color: #0a3d62;
+	border:none;
+	outline-color:powderblue;
+	padding:0.5rem;
+	color:white;
+	font-weight: bold;
+}
+
+footer .send_email .btn_area button{
+	padding:0.5rem 1rem;
+	font-size:0.5rem;
+}
+
+footer .send_email .btn_area .send_email_white_btn{
+	border:1.5px solid white;
+	margin-right: 0.5rem;
+}
+
+/* footer info */
+footer .info ul li{
+	padding:3rem 2rem;
+	border-bottom:1px solid rgba(200, 200, 200, 0.4);
+	display:flex;
+	font-size:0.8rem;
+}
+
+footer .info ul li i{
+	margin-right:1rem;
+	height: 100%;
+	padding:0.3rem;
+	background-color:white;
+	color:rgb(00,36,66);
+	border-radius:50%;
+	border:1px solid white;
+}
+
+footer .info ul li .info_text{
+	display:flex;
+	flex-direction: column;
+}
+
+footer .info ul li .info_text .icon_words{
+	margin-top:0.3rem;
+	margin-bottom:1rem;
+	font-weight: bold;
+}
+
+footer .info ul li .info_text .sub_icon_words{
+	font-size:0.6rem;
+}
+
+/* footer footer_bottom */
+footer .footer_bottom{
+	margin:3rem 2rem;
+}
+
+footer .footer_bottom ul{
+	display:flex;
+	margin-bottom:2rem;
+}
+
+footer .footer_bottom ul li i{
+	height: 20px;
+	width:20px;
+	text-align: center;
+	font-size:0.8rem;
+	background-color:white;
+	color:rgb(00,36,66);
+	border-radius: 50%;
+	padding:0.3rem;
+	margin-right: 0.8rem;
+}
+
+/* footer footer_word */
+footer .footer_word{
+	font-size:0.5rem;
+	color:rgba(200, 200, 200, 0.4);
+}
+
+footer .footer_word a{
+	color:rgba(200, 200, 200, 0.4);
+	border-color:rgba(200, 200, 200, 0.4);
+}
+
+
+/* hover */
+footer .info ul li i:hover,
+footer .footer_bottom ul li i:hover{
+	background-color:powderblue;
+	transition: all 300ms;
+}
+
+.footer_word a:hover,
+a:hover{
+	border:none;
+	color:powderblue;
+	transition: all 300ms;
+}
+
+main .head_line .head_sub button:hover,
+.ad_part .ad_part_btn:hover,
+footer .send_email .btn_area .send_email_black_btn:hover{
+	color:powderblue;
+	border-color:powderblue;
+	transition: all 300ms;
+}
+
+main header .header_left button:hover,
+footer .send_email .btn_area .send_email_white_btn:hover{
+	border-color:powderblue;
+	background-color:powderblue;
+	transition: all 300ms;
+}
+
+/* with JS */
+/* header */
+main header .header_left button,
+main header .header_text,
+main header .header_right i{
+	transition: all 300ms;
+}
+
+@keyframes fix_header{
+	from{
+		top:-4em;
+		opacity:0;
+	}
+	to{
+		top:0;
+		opacity:1;
+	}
+}
+
+.fixed{
+	animation: fix_header 1s;
+	animation-fill-mode: forwards;
+	width:100%;
+	position:fixed;
+	z-index:1000;
+	background-color: rgb(00,36,66);
+}
+
+.fixed .header_right{
+	padding-right:35px;
+}
+
+.menu_page{
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:0;
+	background-color:rgba(00,36,66, 0.97);
+
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size:0.6rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-align: center;
+
+	opacity: 0;
+	z-index:-1;
+
+
+	transition: all 300ms ease;
+}
+
+.menu_page ul li{
+	padding: 1rem 5rem;
+	border-bottom: 1px solid rgba(250,250,250, 0.1);
+}
+
+.menu_page ul li a{
+	border:none;
+}
+
+.menu_page button{
+	letter-spacing: 0.1rem;
+}
+
+.menu_page .white_block{
+	padding:1rem 4.35rem;
+}
+
+.menu_page .btn{
+	margin-top:1rem;
+	padding: 1rem 5.62rem;
+}
+
+.menu_page i{
+	position:absolute;
+	top:20px;
+	right:40px;
+
+	color:white;
+	font-size:1rem;
+}
+
+.menu_page .white_block:hover,
+.menu_page .btn:hover{
+	color:powderblue;
+	border-color: powderblue;
+	transition:all 300ms ease;
+}
+
+.menu_page .white_block:hover{
+	background-color:powderblue;
+	color:rgba(00,36,66, 0.97);
+}
+
+.menu_page i:hover{
+	color:powderblue;
+	transition:all 300ms ease;
+}
+
+.reveal{
+	opacity: 1;
+	z-index:10000;
+}
+
+
+/* mobile */
+@media (max-width:600px) {
+	main .head_line .head_sub{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	main .head_line .head_sub .head_btn{
+		margin-top:1rem;
+	}
+	.contents ul{
+		grid-template: repeat(6, 1fr) / 1fr;
+	}
+}
+
+@media (min-width:1024px) {
+	.contents ul{
+		grid-template: repeat(3, 1fr) / 40% 20% 40%;
+
+	}
+
+	.contents ul .pic02{
+		grid-column: 2/4;
+	}
+	.contents ul .pic03{
+		grid-column: 1/3;
+	}
+	.contents ul .pic06{
+		grid-column: 2/4;
+	}
+
+	footer{
+		display:grid;
+		grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+		height: 32rem;
+	}
+	footer .send_email{
+		border-right:1px solid rgba(200, 200, 200, 0.4);
+	}
+	footer .info ul li{
+		padding:2rem 2rem;
+	}
+}
