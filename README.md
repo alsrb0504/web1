@@ -15,3 +15,16 @@
 - ::before과 ::after로 선을 만들 수 있다.
 
 - html에 div가 너무 많다. 더 효율적으로 태그를 사용해야 겠다.
+
+
+6
+=======
+
+![스크린샷(1)](https://user-images.githubusercontent.com/65377787/90161096-9705df00-ddcd-11ea-8035-f56671f63a22.png)
+![스크린샷(2)](https://user-images.githubusercontent.com/65377787/90161101-9a00cf80-ddcd-11ea-9ece-3aeb1e5d2bfb.png)
+
+=======
+
+- animation, transition으로는 display: none을 적용할 수 없다.
+
+- js를 더 부드럽게 적용할 방법을 익혀야 한다.
