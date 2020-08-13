@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./src/style.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
+  <title>Astral</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- icons -->
+    <ul class="icons">
+      <li>
+        <i id="home" class="fas fa-home"></i>
+      </li>
+      <li>
+        <i id="folder" class="fas fa-folder"></i>
+      </li>
+      <li>
+        <i id="envelop" class="fas fa-envelope"></i>
+      </li>
+      <li>
+        <i id="twitter" class="fab fa-twitter"></i>
+      </li>
+    </ul>
+
+    <div class="inner">
+
+      <!-- home icon -->
+      <div class="main_page active">
+        <section class="home">
+          <div class="text_part">
+            <span class="name">Jane Doe</span>
+            <span class="job">Senior Astral Projectionist</span>
+          </div>
+          <div class="profile">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </section>
+      </div>
+
+      <!-- file icon -->
+      <div class="work_part inactive">
+        <section class="file" style="display:none">
+          <span class="file_title">Work</span>
+          <span class="file_text">Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia luctus elit eget interdum.</span>
+          <ul class="pictures">
+            <li><img src="./images/pic01.jpg" alt=""></li>
+            <li><img src="./images/pic02.jpg" alt=""></li>
+            <li><img src="./images/pic03.jpg" alt=""></li>
+            <li><img src="./images/pic04.jpg" alt=""></li>
+            <li><img src="./images/pic05.jpg" alt=""></li>
+            <li><img src="./images/pic06.jpg" alt=""></li>
+            <li><img src="./images/pic07.jpg" alt=""></li>
+            <li><img src="./images/pic08.jpg" alt=""></li>
+            <li><img src="./images/pic09.jpg" alt=""></li>
+            <li><img src="./images/pic10.jpg" alt=""></li>
+            <li><img src="./images/pic11.jpg" alt=""></li>
+            <li><img src="./images/pic12.jpg" alt=""></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- message icon -->
+      <div class="contact_part inactive">
+        <section class="message" style="display:none">
+          <span class="message_title">Contact Me</span>
+          <div class="name_email">
+            <input type="text" class="name" placeholder="Name">
+            <input type="text" class="email" placeholder="Email">
+          </div>
+          <input type="text" class="subject" placeholder="Subject">
+          <textarea cols="30" rows="10" class="message" placeholder="Message"></textarea>
+
+          <button class="send_btn">Send Message</button>
+
+        </section>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <span class="footer_text">
+        © Untitled. | Design: <a href="#">HTML5 UP</a> | Demo Images: <a href="#">Unsplash</a>
+      </span>
+    </footer>
+  </div>
+
+  <script src="./src/index.js"></script>
+</body>
+
+</html>
