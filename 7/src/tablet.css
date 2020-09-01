@@ -1,0 +1,18 @@
+/* 태블릿 크기 */
+.second__text__box,
+.third__text__box {
+  width: 60%;
+}
+
+.container img {
+  width: 15rem;
+  height: 10rem;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer .icons {
+  margin-bottom: 1rem;
+}

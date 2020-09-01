@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 1024px)" href="src/tablet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <title>Big Picture</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <span class="header__title">Big Picture</span>
+      <nav class="header__menu">
+        <span id="0" class="menu__text">Intro</span>
+        <span id="1" class="menu__text">What I Do</span>
+        <span id="2" class="menu__text">Who I Am</span>
+        <span id="3" class="menu__text">My Work</span>
+        <span id="4" class="menu__text">Contact</span>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <!-- intro -->
+      <section class="intro">
+        <div class="intro__title">Hey.</div>
+        <div class="intro__text">
+          Welcome to <strong>Big Picture</strong> a responsive site template designed by
+		  <a href="#">HTML5 UP</a> and released for free under the 
+		  <a href=#">Creative Commons Attribution license.</a>
+		</div>
+		<i id="intro__btn" class="fas fa-arrow-down"></i>
+      </section>
+
+      <!-- second part : what i do -->
+      <section class="second">
+		  <div class="second__text__box">
+			  <div class="second__title">What I Do</div>
+			  <div class="second__text">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</div>
+		  </div>
+		  <i id="second__btn" class="down__btn fas fa-arrow-down"></i>
+	  </section>
+
+      <!-- third part : Who I Am -->
+      <section class="third">
+		<div class="third__text__box">
+			<div class="third__title">Who I Am</div>
+			<div class="third__text">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</div>
+		</div>
+		<i id="third_btn" class="down__btn fas fa-arrow-down"></i>
+	  </section>
+
+      <!-- forth part : My Work -->
+      <div class="forth">
+		  <div class="forth__title">My Work</div>
+		  <div class="forth__text">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</div>
+		  <div class="container">
+			  <img class="left" src="image/container/01.jpg" alt="picture">
+			  <img class="right" src="image/container/02.jpg" alt="picture">
+			  <img class="left" src="image/container/03.jpg" alt="picture">
+			  <img class="right" src="image/container/04.jpg" alt="picture">
+			  <img class="left" src="image/container/05.jpg" alt="picture">
+			  <img class="right" src="image/container/06.jpg" alt="picture">
+		  </div>
+	  </div>
+
+      <!-- fifth part : contact -->
+      <section class="fifth">
+		  <div class="fifth__title">Say Hello.</div>
+		  <sapn class="fifth__text">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</sapn>
+		  <form class="contact">
+			  <div class="NameAndEmail">
+				  <input type="text" class="Name" placeholder="Name">
+				  <input type="text" class="Email" placeholder="Email">
+			  </div>
+			  <textarea id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+			  <button class="contact__btn">Send Message</button>
+		  </form>
+	  </section>
+
+      <!-- footer -->
+      <footer class="footer">
+		  <nav class="icons">
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-facebook-f"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-linkedin-in"></i>
+			<i class="fab fa-pinterest"></i>
+		  </nav>
+		  <span class="footer__text">
+			© Untitled | Design:<a href="#">HTML5 UP</a> | Demo Images: <a href="#">Felicia Simion</a> + <a href="#">Michael Domaradzki</a>
+		  </span>
+	  </footer>
+	</div>
+	
+	<script type="module" src="src/main.js"></script>
+	<script type="module" src="src/arrange.js"></script>
+  </body>
+</html>

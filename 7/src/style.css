@@ -1,0 +1,408 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  color: White;
+  text-decoration: none;
+  border-bottom: 1.5px solid white;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+}
+
+/* header part */
+.header {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 50px;
+  width: 100vw;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.8rem;
+  /* padding: 0 1rem; */
+}
+
+.header__title {
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+  padding-left: 1rem;
+}
+
+.header__menu {
+  flex-basis: 70%;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.header__menu span {
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* intro part */
+.intro {
+  background: url("../image/1.jpg") center / cover;
+  background-attachment: fixed;
+  height: 93vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.intro__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  /* padding-bottom: 1rem; */
+}
+
+.intro__text {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 27rem;
+  margin: 1rem 0;
+}
+
+#intro__btn {
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 100ms ease-in;
+}
+#intro__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* second : what i do part */
+.second {
+  background: url("../image/2.jpg") center / cover;
+  background-attachment: fixed;
+  height: 93vh;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+.second__text__box {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 4rem 2rem;
+  width: 40%;
+  height: 60%;
+
+  position: absolute;
+  top: 15%;
+  right: -40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transition: all 1000ms ease;
+}
+
+.second__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: darkslategray;
+}
+
+.second__text {
+  font-size: 0.9rem;
+}
+
+.down__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: white;
+  font-size: 2rem;
+
+  padding: 1rem;
+  border: 3px solid white;
+  border-radius: 50% 50% 0 0;
+  transition: all 100ms ease-in;
+}
+.down__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* third : who i am part */
+.third {
+  background: url("../image/3.jpg") center / cover;
+  background-attachment: fixed;
+  height: 93vh;
+
+  position: relative;
+  overflow-x: hidden;
+}
+
+.third__text__box {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 4rem 2rem;
+  width: 40%;
+  height: 60%;
+
+  position: absolute;
+  top: 15%;
+  left: -40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transition: all 1000ms ease;
+}
+
+.third__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: darkslategray;
+}
+
+.third__text {
+  font-size: 0.9rem;
+}
+
+/* forth : my work part */
+.forth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 5rem 0;
+}
+
+.forth__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  color: darkslategray;
+  margin-bottom: 1rem;
+}
+
+.forth__text {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 62%;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  opacity: 0;
+  transition: all 800ms ease-in;
+}
+
+.container .right {
+  transform: translateX(+50%);
+  transition: all 800ms ease-in;
+}
+.container .left {
+  transform: translateX(-50%);
+  transition: all 800ms ease-in;
+}
+
+/* fifth : contact part */
+.fifth {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding-top: 4rem;
+
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.fifth__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  color: darkslategray;
+  margin-bottom: 1rem;
+}
+
+.fifth__text {
+  font-size: 0.9rem;
+  margin-bottom: 1.7rem;
+}
+
+.contact {
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 35rem;
+  padding: 2rem;
+
+  position: absolute;
+  bottom: -50%;
+
+  transition: all 500ms ease-in;
+}
+
+.NameAndEmail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Email,
+.Name {
+  flex-basis: 47%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+
+textarea,
+input {
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  outline-color: powderblue;
+}
+textarea::placeholder,
+input::placeholder {
+  color: rgb(200, 200, 200);
+  font-size: 0.7rem;
+}
+
+#Message {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  font-family: Arial;
+  width: 96.3%;
+}
+
+.contact__btn {
+  background-color: rgba(155, 199, 155, 0.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+
+  font-size: 0.8rem;
+  color: white;
+  padding: 1rem 1.5rem;
+
+  transition: all 100ms ease-in;
+}
+.contact__btn:hover {
+  opacity: 0.6;
+}
+
+/* footer part */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(58, 70, 80, 0.959);
+
+  font-size: 0.8rem;
+  color: gray;
+
+  box-sizing: border-box;
+  padding: 1.2rem 1.5rem;
+}
+
+.icons i {
+  margin-right: 1rem;
+  transition: color 150ms ease-in;
+}
+.icons i:hover {
+  color: whitesmoke;
+}
+
+.footer a {
+  color: gray;
+  border-color: gray;
+  transition: all 150ms ease-in;
+}
+.footer a:hover {
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+  .intro .intro__text {
+    width: 80%;
+  }
+  .third .third__text__box,
+  .second .second__text__box {
+    top: 50%;
+    text-align: center;
+    width: 90%;
+  }
+  .second .second__text__box {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .third .third__text__box {
+    right: 50%;
+    transform: translate(5%, -50%);
+  }
+
+  .fifth {
+    height: 110vh;
+    text-align: center;
+  }
+
+  .container {
+    margin-top: 1rem;
+    grid-template: repeat(6, 1fr) / 1fr;
+  }
+
+  .contact {
+    width: 95%;
+  }
+
+  .contact .NameAndEmail {
+    flex-direction: column;
+  }
+
+  .Email {
+    margin-top: 1rem;
+  }
+
+  .fifth {
+    margin-bottom: 1rem;
+  }
+
+  footer .footer__text {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}
