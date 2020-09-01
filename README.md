@@ -28,3 +28,13 @@
 - animation, transition으로는 display: none을 적용할 수 없다.
 
 - js를 더 부드럽게 적용할 방법을 익혀야 한다.
+
+
+7
+======================
+
+![스크린샷(10)](https://user-images.githubusercontent.com/65377787/91836651-0e6cb700-ec86-11ea-8d49-321e06a7850e.png)
+![스크린샷(11)](https://user-images.githubusercontent.com/65377787/91836665-1298d480-ec86-11ea-925b-9906a101b609.png)
+
+
+=====================
